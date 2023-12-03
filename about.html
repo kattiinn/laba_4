@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Відгуки</title>
+  <style>
+   
+    
+    
+    body {
+    align-items: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background :url(stule/images/ac77fd1f75220030e1317de34555320c.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 60px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    }
+
+
+.container {
+  max-width: 800px;
+}
+
+.review {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(3px); ;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-details h4 {
+  margin: 0;
+}
+
+.review-text {
+  margin: 0;
+  line-height: 1.5;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px black;
+
+}
+header .logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    transition: .5s ;
+}
+header .logo:hover {
+    transform: scale(1.2);
+
+}
+header nav ul li {
+    position: relative;
+    float: left;
+}
+header nav ul li a {
+    padding: 15px ;
+    color: black;
+    font-size: 16px;
+    display: block;
+
+}
+header nav ul li a:hover {
+    background: black;
+    color: aliceblue;
+
+}
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: white;
+    display: none;
+}
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .1) ;
+}
+nav ul li ul li ul {
+    left: 180px;
+    top: 0;
+}
+nav ul li:hover > ul{
+    display: initial;
+}
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+  </style>
+</head>
+<body>
+    <header >
+        <a href="#" class="logo">Bookstep</a>
+        <input placeholder="&#128269;Search..." id="HGYGY" name="THTH6" type="text">
+        <a href="#modalOverlay" id="openModalBtn"><button><div class="text" >Увійти</div></button></a>
+        <nav>
+            <ul>
+                <li><a href="#"> Хто ми  &#8595; </a> 
+                    <ul>
+                        <li><a href="index.html">Про нас" </a></li>
+                        <li><a href="reading.html"> Чому важливо читати  </a></li>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="best.html"> Бестцеллери  </a></li>
+                <li><a href="ukraine.html"> Українська література</a></li>
+                <li><a href="clasik.html">Класика</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="container mt-5">
+  <h2 class="mb-4">Відгуки</h2>
+
+  <div class="review">
+    <div class="user-info">
+      <img src="user1.jpg" alt="User Avatar" class="avatar">
+      <div class="user-details">
+        <h4>Азовсталь</h4>
+        <p>Email: user@example.com</p>
+      </div>
+    </div>
+    <p class="review-text">Все влаштовує але малий вибір продукції.</p>
+  </div>
+
+  <div class="review">
+    <div class="user-info">
+      <img src="user2.jpg" alt="User Avatar" class="avatar">
+      <div class="user-details">
+        <h4>Антоніна</h4>
+        <p>Email: anotheruser@example.com</p>
+      </div>
+    </div>
+    <p class="review-text"> Це чодово. Замовила собі книгу , так прийшла за 2 дні.мені подобається!</p>
+  </div>
+
+  <div class="review">
+    <h1>Ваш коментар має бути тут </h1>
+        <label for="username"> Ваше Ім'я :</label>
+        <input type="text" id="сщьент" name="username" required>
+        <br><br>
+        <label for="username"> Ваш коментар :</label>
+        <input type="text" id="сщьент" name="username" required>
+        
+  </div>
+
+  <!-- Додайте інші відгуки за потреби -->
+
+</div>
+
+</body>
+</html>
